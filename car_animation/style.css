@@ -1,0 +1,135 @@
+@import url("../../css/normalize.css");
+@import url("../../css/reset.css");
+
+.main-bg {
+    background-image: url("./img/sky.jpg");
+    background-size: cover;
+    /* vh: viewpost height */
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.road {
+    background-image: url("./img/road.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    /* margin-top: 100px; */
+    /* height: 184px; */
+    height: 170px;
+    width: 200vw;
+    /* absolute postion cancels the display-block */
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: road 4s linear infinite;
+}
+
+/*
+    set the width to 200% of page, after scrolling 100% of width,
+    it still has background, after that in 0% it moves the roud to 
+    its initial location.
+*/
+@keyframes road {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100vw);
+    }
+}
+
+.buildings {
+    background-image: url("./img/city_buildings.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 200vw;
+    height: 300px;
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 170px;
+    animation: road 12s linear infinite;
+}
+
+.car {
+    width: 250px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 100px;
+    z-index: 1;
+    /* animation: car .8s linear infinite; */
+}
+
+.car img {
+    width: 100%;
+    animation: car-shake .8s linear infinite;
+}
+
+@keyframes car-shake {
+    0% {
+        transform: translateY(0);
+        /* margin-bottom: 0; */
+    }
+
+    25% {
+        transform: translateY(5px);
+        /* margin-bottom: 5px; */
+    }
+
+    50% {
+        transform: translateY(1px);
+        /* margin-bottom: 1px; */
+    }
+
+    75% {
+        transform: translateY(4px);
+        /* margin-bottom: 3px; */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* margin-bottom: 0; */
+    }
+}
+
+.wheels {
+    position: absolute;
+    right: 50%;
+    z-index: 1;
+    bottom: 152px;
+    transform: translateX(50%);
+}
+
+.wheels img {
+    width: 40px;
+}
+
+.wheels .wheel-front {
+    position: absolute;
+    right: 60px;
+}
+
+.wheels .wheel-back {
+    position: absolute;
+    right: -93px;
+}
+
+.wheels img {
+    animation: wheel-rotate 1.5s linear infinite;
+}
+
+@keyframes wheel-rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
