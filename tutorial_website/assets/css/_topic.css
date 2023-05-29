@@ -1,0 +1,90 @@
+.topic-wrapper {
+    background-image: url("../img/topic-bg.jpg");
+    /* height: 700px; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.topic-wrapper-bg {
+    padding: 30px 0 0 0;
+    background-color: #fff4;
+    backdrop-filter: blur(50px);
+}
+
+.topic-wrapper .card {
+    box-shadow: 3px 4px 20px 0px #444d;
+    padding: 5px;
+}
+
+.topic-wrapper .card-body {
+    padding: 0 15px;
+}
+
+.topic-wrapper .card-body .date {
+    position: absolute;
+    top: -73px;
+    right: 6px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.topic-wrapper .card-body .date p {
+    padding: 2px 4px;
+}
+
+.topic-wrapper .card-body .date p:first-child {
+    background-color: orange;
+}
+
+.topic-wrapper .card-body .date p:last-child {
+    background-color: white;
+    color: orange;
+}
+
+.topic-wrapper .card .card-header {
+    overflow: hidden;
+}
+
+.topic-wrapper .card img {
+    display: block;
+    transition: all .4s ease-out;
+}
+
+.topic-wrapper .card:hover .card-header img {
+    transform: scale(1.5) rotate(10deg);
+    filter: blur(3px) brightness(.5);
+}
+
+.topic-wrapper .card-body a {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    margin: 7px 0;
+    margin-top: 15px;
+}
+
+.topic-wrapper .card-body p {
+    color: #444;
+}
+
+.topic-wrapper .card-footer {
+    text-align: center;
+}
+
+.topic-wrapper .card-footer ul li {
+    display: inline-block;
+    color: #ccc;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.topic-wrapper .card-footer ul li span {
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: 1px;
+}

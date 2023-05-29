@@ -1,0 +1,23 @@
+@import url("./__root.css");
+
+.statistics-section-wrapper {
+    margin-top: 130px;
+    background-color: var(--dark-yellow);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.statistics-section-wrapper img {
+    width: 80px;
+}
+
+.statistics-section-wrapper .number {
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.statistics-section-wrapper .number-title {
+    color: #333;
+}

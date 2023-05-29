@@ -1,0 +1,104 @@
+@import url("./__root.css");
+
+figure.header {
+    line-height: 0;
+    position: relative;
+    height: max-content;
+    height: -moz-max-content;
+    overflow: hidden;
+}
+
+.img-header {
+    width: 100%;
+    filter: blur(2px);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #333a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-title {
+    color: white;
+    padding: 170px 50px 0 0;
+    position: relative;
+}
+
+.header-title h1 {
+    font-size: 3rem;
+}
+
+
+.header-title h3 {
+    font-size: 2rem;
+}
+
+.header-title a {
+    color: white;
+    background-color: var(--dark-yellow);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: smaller;
+    text-shadow: 1px 1px 4px #aaa;
+    box-shadow: 2px 4px 6px -1px #444;
+    transition: all .2s linear;
+    position: absolute;
+    right: 570px;
+}
+
+.header-title .text-shadow-gray {
+    text-shadow: 1px 1px 4px #999;
+}
+
+.header-title a:hover {
+    background-color: var(--light-yellow);
+}
+
+@media screen and (max-width:1000px) {
+    .header-title {
+        padding: 70px 50px 0 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header-title {
+        padding: 40px 20px 0 0;
+    }
+
+    .header-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-title h3 {
+        font-size: 1rem;
+    }
+
+    .header-title a {
+        right: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-title {
+        padding: 20px 20px 0 0;
+    }
+
+    .header-title h1 {
+        font-size: 2rem;
+    }
+
+    .header-title h3 {
+        font-size: 1rem;
+    }
+
+    .header-title a {
+        padding: 3px 5px;
+        font-size: 0.8rem;
+        right: 250px;
+    }
+}

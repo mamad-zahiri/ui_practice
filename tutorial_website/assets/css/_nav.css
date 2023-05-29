@@ -1,0 +1,71 @@
+@import url("./__root.css");
+
+.active {
+    border-bottom: 3px solid var(--light-yellow);
+    color: var(--dark-yellow) !important;
+    text-shadow: 1px 1px 4px #dfdfdf;
+}
+
+.nav {
+    background-color: #fff;
+    overflow: hidden;
+    /* sticky position must have "top" attribute
+    top represents the distance from top for nav to stay */
+    position: sticky;
+    top: 0;
+    /* z-index makes sure nav places on top of everything */
+    z-index: 999;
+}
+
+.nav a {
+    float: right;
+    padding: 14px 16px;
+    text-align: center;
+    color: #333;
+}
+
+.nav .logo i {
+    font-size: 24px;
+    color: var(--dark-yellow);
+    rotate: -15deg;
+}
+
+.nav a:not(.logo):hover {
+    border-bottom: 3px solid var(--light-yellow);
+    color: var(--dark-yellow);
+    text-shadow: 1px 1px 4px #dfdfdf;
+}
+
+.icon {
+    display: none;
+    float: left;
+}
+
+@media screen and (max-width:600px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive a.icon {
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+}

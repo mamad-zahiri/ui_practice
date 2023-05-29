@@ -1,0 +1,43 @@
+@import url("./__root.css");
+
+.about-left-side,
+.about-right-side {
+    padding: 60px;
+    position: relative;
+}
+
+.about-left-side h4 {
+    font-size: large;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.about-left-side p {
+    font-size: smaller;
+    padding: 12px;
+    text-align: justify;
+    color: #444;
+}
+
+.about-left-side a {
+    color: white;
+    background-color: var(--dark-yellow);
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: smaller;
+    position: absolute;
+    text-shadow: 1px 1px 4px #aaa;
+    left: 70px;
+    transition: all .06s linear;
+}
+
+.about-left-side a:hover {
+    box-shadow: 2px 2px 7px -1px #999;
+    border-radius: 20px;
+}
+
+.about-right-side {
+    height: 100%;
+}

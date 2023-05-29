@@ -1,0 +1,69 @@
+@import url("./__root.css");
+
+.container-fluid-custom {
+    background-color: rgb(53, 0, 103);
+    height: 40px;
+    color: white;
+}
+
+.container-fluid-custom .top-contact {
+    text-align: center;
+}
+
+.container-fluid-custom .top-contact i {
+    color: var(--light-yellow);
+    vertical-align: -10px;
+}
+
+.container-fluid-custom .top-contact a span {
+    color: white;
+    vertical-align: -9px;
+    margin-right: 10px;
+    transition: all .1s ease-out;
+    font-weight: 400;
+}
+
+.container-fluid-custom .top-contact a:hover span {
+    color: var(--light-yellow);
+}
+
+.container-fluid-custom .top-social-media {
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.container-fluid-custom .top-social-media i {
+    color: var(--light-yellow);
+    margin: 10px 12px 0 12px;
+    padding: 3px;
+    background-color: transparent;
+    transform: scale(1);
+    transition: all .1s ease-out;
+}
+
+.container-fluid-custom .top-social-media a:hover i {
+    color: white;
+    transform: scale(1.2);
+}
+
+.container-fluid-custom .top-social-media a:hover i[class*="telegram"] {
+    background-color: #0088CC;
+    border-radius: 5px;
+}
+
+.container-fluid-custom .top-social-media a:hover i[class*="instagram"] {
+    /* background-color: #0088CC; */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 5px;
+}
+
+.container-fluid-custom .top-social-media a:hover i[class*="facebook"] {
+    background-color: #1674ea;
+    border-radius: 5px;
+}
+
+.container-fluid-custom .top-social-media a:hover i[class*="twitter"] {
+    background-color: #0088CC;
+    border-radius: 5px;
+}
