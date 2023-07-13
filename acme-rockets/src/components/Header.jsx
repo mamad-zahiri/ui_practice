@@ -14,11 +14,24 @@ const Header = () => {
         menuBot.classList.toggle("toggle-btn-bot")
     }
 
+    const toggleTheme = () => {
+        const sun = "$#x263C;"
+        const moon = "$#x263D;"
+        document.documentElement.classList.toggle("dark")
+    }
+
     return (
         <header className="sticky top-0 z-10 bg-teal-700 text-white">
             <section className="mx-auto flex max-w-6xl items-center justify-between p-4">
-                <h1 className="text-3xl font-medium">
+                <h1 className="flex items-center justify-start text-3xl font-medium">
                     <a href="">🚀 Acme Rockets</a>
+
+                    <button
+                        onClick={toggleTheme}
+                        className="relative -top-1 ml-4 text-4xl after:align-middle after:content-['\263E'] dark:top-0 dark:after:content-['\263C']"
+                    >
+                        {/* <p></p> */}
+                    </button>
                 </h1>
                 <div>
                     <button
