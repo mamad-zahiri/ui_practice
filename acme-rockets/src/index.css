@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .section-fit-height {
+        min-height: calc(100vh - 68px);
+    }
+
+    .toggle-btn-top {
+        @apply transform rotate-45 top-4
+    }
+
+    .toggle-btn-mid {
+        @apply bg-transparent
+    }
+
+    .toggle-btn-bot {
+        @apply transform -rotate-45 top-4
+    }
+}
