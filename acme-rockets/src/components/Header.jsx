@@ -28,10 +28,8 @@ const Header = () => {
 
                     <button
                         onClick={toggleTheme}
-                        className="relative -top-1 ml-4 text-4xl after:align-middle after:content-['\263E'] dark:top-0 dark:after:content-['\263C']"
-                    >
-                        {/* <p></p> */}
-                    </button>
+                        className="relative -top-1 ml-4 after:align-middle after:font-roboto after:text-3xl after:content-['\263E'] dark:-top-1 dark:after:text-4xl dark:after:content-['\263C']"
+                    ></button>
                 </h1>
                 <div>
                     <button
