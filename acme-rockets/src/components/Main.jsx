@@ -109,7 +109,7 @@ const Main = () => {
                     </h2>
                     <figure className="my-12">
                         <blockquote className="relative rounded-3xl bg-white px-9 py-7 shadow-md dark:bg-gray-900 sm:px-11 sm:py-9">
-                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-white before:opacity-40 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-white after:opacity-40 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
+                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-gray-400 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-gray-400 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
                                 Acme has always been there for me. Their Explorer rocket is the best
                                 rocket I&apos;ve ever flown. I&apos;ve been to the moon and back and
                                 I can&apos;t wait to go again.
@@ -122,7 +122,7 @@ const Main = () => {
 
                     <figure className="my-12">
                         <blockquote className="relative rounded-3xl bg-white px-9 py-7 shadow-md dark:bg-gray-900 sm:px-11 sm:py-9">
-                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-white before:opacity-40 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-white after:opacity-40 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
+                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-gray-400 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-gray-400 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
                                 The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
                                 Space Modulator on several occasions.{" "}
                                 <span className="italic">This makes me very, very angry!</span>{" "}
@@ -138,7 +138,7 @@ const Main = () => {
 
                     <figure className="my-12">
                         <blockquote className="relative rounded-3xl bg-white px-9 py-7 shadow-md dark:bg-gray-900 sm:px-11 sm:py-9">
-                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-white before:opacity-40 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-white after:opacity-40 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
+                            <p className="text-left text-lg text-gray-600 transition-all before:absolute before:left-2 before:top-2 before:transform before:font-[roboto] before:text-6xl before:text-gray-400 before:content-['\201C'] after:absolute after:-bottom-3 after:right-2 after:translate-y-4 after:transform after:font-[roboto] after:text-6xl after:text-gray-400 after:content-['\201D'] hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-300 sm:text-xl">
                                 I knew I not only wanted &#8212;{" "}
                                 <span className="italic">I needed</span> &#8212; Acme&apos;s
                                 Infinity Rocket for my mission in space. Acme delivered in one day!

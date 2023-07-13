@@ -1,3 +1,6 @@
+import { useState } from "react"
+import { getImageUrl } from "../utils"
+
 const Header = () => {
     const toggleMenu = (e) => {
         e.preventDefault()
@@ -13,10 +16,18 @@ const Header = () => {
         menuMid.classList.toggle("toggle-btn-mid")
         menuBot.classList.toggle("toggle-btn-bot")
     }
+    const sun = getImageUrl("sun.png")
+    const moon = getImageUrl("moon.png")
 
-    const toggleTheme = () => {
-        const sun = "$#x263C;"
-        const moon = "$#x263D;"
+    const toggleTheme = {
+        "": { theme: "dark", icon: sun, alt: "sun logo" },
+        dark: { theme: "", icon: moon, alt: "moon logo" },
+    }
+
+    const [theme, setTheme] = useState(toggleTheme[""])
+
+    const toggleDarkMode = () => {
+        setTheme((cur) => toggleTheme[cur.theme])
         document.documentElement.classList.toggle("dark")
     }
 
@@ -26,16 +37,15 @@ const Header = () => {
                 <h1 className="flex items-center justify-start text-3xl font-medium">
                     <a href="">🚀 Acme Rockets</a>
 
-                    <button
-                        onClick={toggleTheme}
-                        className="relative -top-1 ml-4 after:align-middle after:font-roboto after:text-3xl after:content-['\263E'] dark:-top-1 dark:after:text-4xl dark:after:content-['\263C']"
-                    ></button>
+                    <button onClick={toggleDarkMode}>
+                        <img src={theme["icon"]} alt={theme["alt"]} className="ml-4 w-6" />
+                    </button>
                 </h1>
                 <div>
                     <button
                         id="hamburger-btn"
                         onClick={toggleMenu}
-                        className="relative h-9 w-9  text-4xl sm:hidden"
+                        className="relative h-9 w-9  text-4xl md:hidden"
                     >
                         <div
                             id="menu-top"
@@ -52,7 +62,7 @@ const Header = () => {
                     </button>
 
                     <nav
-                        className="hidden flex-row-reverse justify-end gap-x-8 text-xl sm:flex"
+                        className="hidden flex-row-reverse justify-end gap-x-8 text-xl md:flex"
                         aria-label="header"
                     >
                         <a href="#rockets" className="hover:opacity-90">
