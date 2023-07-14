@@ -1,0 +1,33 @@
+{
+  "name": "snap-code",
+  "version": "1.2.0",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "use-react-screenshot": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "vite": "^3.1.3"
+  },
+  "description": "Make simple screenshot of your code in any language and many different styles and color schemas.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamad-zahiry/snap-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamad-zahiry/snap-code/issues"
+  },
+  "homepage": "https://github.com/mohamad-zahiry/snap-code#readme"
+}
