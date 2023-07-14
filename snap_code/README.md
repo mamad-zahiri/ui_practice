@@ -3,11 +3,13 @@
 Make simple screenshot of your code in any language and many different styles and color schemas
 
 #### Install node modules
+
 ```shell
 npm install --legacy-peer-deps
 ```
 
 #### !!! Before build
+
 This project is built before. You can find build files in `./dist` directory.
 
 #### Build your self
@@ -17,7 +19,7 @@ If you wanna build propject on **localhost** or **another server**, comment the 
 comment the line:
 
 ```js
-// base: "/ui_practice/snap-code/dist/",
+// base: "/ui_practice/snap_code/dist/",
 ```
 
 or:
@@ -27,10 +29,13 @@ or:
 ```
 
 ##### Build
+
 ```shell
 npm run build
 ```
+
 ##### For Developers
+
 ```shell
 npm run dev
 ```

@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react"
 export default defineConfig({
     plugins: [react()],
     // for local run comment next line
-    base: "/ui_practice/snap-code/dist",
+    base: "/ui_practice/snap_code/dist",
 })
