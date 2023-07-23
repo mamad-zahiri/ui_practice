@@ -38,33 +38,21 @@ const Header = () => {
                     <a href="">🚀 Acme Rockets</a>
 
                     <button onClick={toggleDarkMode}>
-                        <img src={theme["icon"]} alt={theme["alt"]} className="ml-4 w-6" />
+                        <img
+                            src={theme["icon"]}
+                            alt={theme["alt"]}
+                            className="ml-4 w-6 scale-125 rounded-full p-1 hover:bg-white hover:bg-opacity-30"
+                        />
                     </button>
                 </h1>
                 <div>
-                    <button
-                        id="hamburger-btn"
-                        onClick={toggleMenu}
-                        className="relative h-9 w-9  text-4xl md:hidden"
-                    >
-                        <div
-                            id="menu-top"
-                            className="absolute right-0 top-1 h-1 w-9 rounded-full bg-white transition-all"
-                        ></div>
-                        <div
-                            id="menu-mid"
-                            className="absolute right-0 top-4 h-1 w-9 rounded-full bg-white transition-all "
-                        ></div>
-                        <div
-                            id="menu-bot"
-                            className="absolute right-0 top-7 h-1 w-9 rounded-full bg-white transition-all"
-                        ></div>
+                    <button id="hamburger-btn" onClick={toggleMenu} className="relative h-9 w-9  text-4xl md:hidden">
+                        <div id="menu-top" className="absolute right-0 top-1 h-1 w-9 rounded-full bg-white transition-all"></div>
+                        <div id="menu-mid" className="absolute right-0 top-4 h-1 w-9 rounded-full bg-white transition-all "></div>
+                        <div id="menu-bot" className="absolute right-0 top-7 h-1 w-9 rounded-full bg-white transition-all"></div>
                     </button>
 
-                    <nav
-                        className="hidden flex-row-reverse justify-end gap-x-8 text-xl md:flex"
-                        aria-label="header"
-                    >
+                    <nav className="hidden flex-row-reverse justify-end gap-x-8 text-xl md:flex" aria-label="header">
                         <a href="#rockets" className="hover:opacity-90">
                             Our Rockets
                         </a>
@@ -88,10 +76,7 @@ const Header = () => {
                     mobileMenu.classList.toggle("flex")
                 }}
             >
-                <nav
-                    className="flex w-full flex-col items-center justify-center gap-y-8 pt-8 text-4xl"
-                    aria-label="mobile"
-                >
+                <nav className="flex w-full flex-col items-center justify-center gap-y-8 pt-8 text-4xl" aria-label="mobile">
                     <a href="#hero" className="hover:opacity-90">
                         Home
                     </a>
