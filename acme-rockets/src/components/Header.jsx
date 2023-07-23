@@ -2,6 +2,32 @@ import { useState } from "react"
 import { getImageUrl } from "../utils"
 
 const Header = () => {
+    const defaultTheme = "dark"
+
+    // name: use for localStorage key:value
+    // nextTheme: point to next theme on toggle
+    const toggleTheme = {
+        dark: { nextTheme: "light", name: "dark", icon: getImageUrl("sun.png"), alt: "sun logo" },
+        light: { nextTheme: "dark", name: "light", icon: getImageUrl("moon.png"), alt: "moon logo" },
+    }
+
+    let userPreferredTheme = localStorage.getItem("theme")
+    if (Object.keys(toggleTheme).indexOf(userPreferredTheme) == -1) {
+        userPreferredTheme = defaultTheme
+    }
+
+    const [theme, setTheme] = useState(toggleTheme[userPreferredTheme])
+    if (theme == toggleTheme.dark) document.documentElement.classList.add("dark")
+
+    const toggleDarkMode = () => {
+        setTheme((cur) => {
+            localStorage.setItem("theme", toggleTheme[cur.nextTheme].name)
+            return toggleTheme[cur.nextTheme]
+        })
+
+        document.documentElement.classList.toggle("dark")
+    }
+
     const toggleMenu = (e) => {
         e.preventDefault()
         const mobileMenu = document.getElementById("mobile-menu")
@@ -16,20 +42,6 @@ const Header = () => {
         menuMid.classList.toggle("toggle-btn-mid")
         menuBot.classList.toggle("toggle-btn-bot")
     }
-    const sun = getImageUrl("sun.png")
-    const moon = getImageUrl("moon.png")
-
-    const toggleTheme = {
-        "": { theme: "dark", icon: sun, alt: "sun logo" },
-        dark: { theme: "", icon: moon, alt: "moon logo" },
-    }
-
-    const [theme, setTheme] = useState(toggleTheme[""])
-
-    const toggleDarkMode = () => {
-        setTheme((cur) => toggleTheme[cur.theme])
-        document.documentElement.classList.toggle("dark")
-    }
 
     return (
         <header className="sticky top-0 z-10 bg-teal-700 text-white">
@@ -39,8 +51,8 @@ const Header = () => {
 
                     <button onClick={toggleDarkMode}>
                         <img
-                            src={theme["icon"]}
-                            alt={theme["alt"]}
+                            src={theme.icon}
+                            alt={theme.alt}
                             className="ml-4 w-6 scale-125 rounded-full p-1 hover:bg-white hover:bg-opacity-30"
                         />
                     </button>
